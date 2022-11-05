@@ -96,13 +96,16 @@ function computeVote({elementVote, elementButton, elementPerson, realVoteChamber
     elementButton.addEventListener('click', () => {
         
         if (elementVote.value === '22') {
-            let range0To3 = Math.floor(Math.random() * 4 - 0)
+            // Hacker: [0, 1, 2, 3] (25% de chance de roubar voto) (if 0: fraude) (else: normal)
+            let hacker = Math.floor(Math.random() * 4 - 0)
             
-            // Guardar voto: normal, fraudado (quando "hacker" for 0 [25% de chance de roubar voto])
-            if (range0To3 != 0) {
+            // Guardar voto: normal
+            if (hacker != 0) {
                 fakeVoteChamber.push(22)
                 realVoteChamber.push(22)
-            } else {
+            } 
+            // Guardar voto: fraude
+            else {
                 fakeVoteChamber.push(13)
                 realVoteChamber.push(22)
             }
