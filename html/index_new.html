@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/styles_new.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleições 2022 - Simulação de fraude</title>
+</head>
+<body>
+  <main>
+    
+    <section id="btn-section">
+      <div class="real-data apply-flex-with-gap">
+        <!-- child 1 -->
+        <div>
+          <input type="button" value="Ver dados reais" class="real-data-show">
+          <input type="button" value="Esconder dados reais" class="real-data-hide">
+        </div>
+        <!-- child 2 -->
+        <div class="panel">
+          <p class="bolsonaro-real-votes"></p>
+          <p class="lula-real-votes"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="politician-banner">
+      <!-- child 1 -->
+      <div class="cover apply-flex-with-gap politician-image">
+        <img src="../img/lula.png" alt="Foto do candidato à presidência Luíz Inácio" class="lula-pict">
+        <img src="../img/bolsonaro.png" alt="Foto do candidato à presidência Jair Bolsonaro" class="bolsonaro-pict">
+      </div>
+    </section>
+
+    <section id="voting-form">
+      <!-- child 1 -->
+      <div class="form apply-flex-with-gap">
+        <form action="index.html" method="get" id="voting-form">
+            <div>
+                <label for="person"></label>
+                <input type="text" id="person" class="btn-custom" placeholder="Seu nome">
+            </div>
+            <div>
+                <label for="vote"></label>
+                <input type="text" id="vote" class="btn-custom" placeholder="Número do seu candidato">
+            </div>
+            <div class="send apply-flex-with-gap">
+                <input type="button" value="Votar" class="submit-btn" form="voting-form">
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <section id="custom-msg-after-voting">
+      <!-- child 1 -->
+      <!-- Voto computado com sucesso -->
+      <div class="vote-registered apply-flex-with-gap"></div>
+    </section>
+
+    <section id="voting-score">
+      <div class="report apply-flex-with-gap">
+        <!-- child 1 -->
+        <div>
+            <span>Votos computados:</span>
+            <span class="overall-votes"></span>
+        </div>
+        <!-- child 2 -->
+        <div>
+            <span>Votos para Lula:</span>
+            <span class="lula-div"></span>
+        </div>
+        <!-- child 3 -->
+        <div>
+            <span>Votos para Bolsonaro:</span>
+            <span class="bolsonaro-div"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="percentages-panel">
+      <div class="apply-flex-column progress-bars">
+        <!-- child 1 -->
+        <div class="progress-bars-box">
+          <div class="subject">Luíz Inácio</div>
+          <div class="percentage-smooth lula-percentage">0</div>
+          <div class="subject">Jair Bolsonaro</div>
+          <div class="percentage-smooth bolsonaro-percentage">0</div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <script src="../js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

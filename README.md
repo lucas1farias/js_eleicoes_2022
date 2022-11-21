@@ -5,6 +5,7 @@
 
 <ol>
   <li>Use a ferramenta de pesquisa em <b>js/scripts.js</b> e procure por <b>hacker</b> para saber onde a fraude acontece</li>
+  <li><b>html/index_new.html</b> é a versão mais atualizada do algoritmo</li>
 </ol>
 
 # js_eleicoes_2022 (English)
@@ -12,4 +13,5 @@
 
 <ol>
   <li>Use the IDE searching tool at <b>js/scripts.js</b> and look for <b>hacker</b> in order to know where the hoax happens</li>
+  <li><b>html/index_new.html</b> is the latest update of the algorithm</li>
 </ol>
